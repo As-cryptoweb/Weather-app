@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #87ceeb, #1e90ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #70a3e6;
+  }
+  
+  .weather-app {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px;
+    background: rgba(67, 115, 138, 0.9);
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: #11c74e;
+  }
+  
+  .search-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px ;
+  }
+  
+  #locationInput {
+    padding: 12px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #130e0e;
+    font-size: 1em;
+    outline: none;
+    background: #f1f1f1;
+  }
+  
+  #searchBtn, #currentLocationBtn {
+    padding: 12px 15px;
+    margin-left: 10px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+  }
+  
+  #currentLocationBtn {
+    background-color: #ff9800;
+  }
+  
+  #searchBtn:hover {
+    background-color: #0c73d4;
+  }
+  
+  #currentLocationBtn:hover {
+    background-color: #e68a00;
+  }
+  
+  section {
+    margin-bottom: 25px;
+  }
+  
+  h2 {
+    color: #1e90ff;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .weather-details p {
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .forecast-container div {
+    background: #066fca;
+    padding: 20px;
+    border-radius: 12px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .forecast-container div:hover {
+    transform: translateY(-10px);
+  }
+  
+  .sunrise-sunset {
+    display: flex;
+    justify-content: space-between;
+    background-color: #a39f9f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sunrise-sunset p {
+    color: #333;
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .weather-app {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .search-location {
+      flex-direction: column;
+    }
+  
+    #locationInput {
+      width: 100%;
+    }
+  
+    .forecast-container div {
+      width: 100%;
+    }
+  }
+  
